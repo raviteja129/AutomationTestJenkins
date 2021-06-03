@@ -54,7 +54,7 @@
                 <version>2.4</version>
                 <configuration>
                     <suiteXmlFiles>
-                        <suiteXmlFile>testng.xml</suiteXmlFile>
+                        <suiteXmlFile>CRM.xml</suiteXmlFile>
                     </suiteXmlFiles>
 
                     <!--<systemPropertyVariables>

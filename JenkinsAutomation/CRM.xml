@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<suite thread-count="2" parallel="tests" name="HRM">
+    <test name="Login Testcase">
+        <classes>
+            <class name="testcases.LoginTest" />
+        </classes>
+    </test>
+</suite>

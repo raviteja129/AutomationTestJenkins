@@ -9,8 +9,8 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 import java.util.concurrent.TimeUnit;
 
 public class BrowserDataFactory {
-
-    public static WebDriver startApplication(String browserName, String appURL, WebDriver driver) {
+    public static WebDriver startApplication(String browserName, String appURL) {
+        WebDriver driver = null;
         if (browserName.contains("Chrome") || browserName.contains("CHROME")) {
             WebDriverManager.chromedriver().setup();
             driver = new ChromeDriver();

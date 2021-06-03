@@ -11,7 +11,7 @@ public class ConfigDataFactory {
     public static Properties Repository = new Properties();
 
     public ConfigDataFactory() throws IOException {
-        file = new File(System.getProperty("usr.dir") + "/src/test/resources/config/config.properties");
+        file = new File(System.getProperty("user.dir") + "/src/test/resources/config/config.properties");
         System.out.println(file);
         try {
             fis = new FileInputStream(file);
