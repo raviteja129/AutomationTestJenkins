@@ -36,13 +36,15 @@ public class BaseClass {
         File reportDirPath = new File(System.getProperty("user.dir") + "/target/reports");
         if (!reportDirPath.exists()) {
             reportDirPath.mkdir();
-            reporter = new ExtentHtmlReporter(new File(reportDirPath+ "/FreeLogin" + Helper.getDateTimeStamp() +".html"));
+            //reporter = new ExtentHtmlReporter(new File(reportDirPath+ "/FreeLogin" + Helper.getDateTimeStamp() +".html"));
+            reporter = new ExtentHtmlReporter(new File(reportDirPath+ "/FreeLogin.html"));
             reporter.config().setDocumentTitle("Orange HRM Automation Report");
             reporter.config().setReportName("Functional Report");
             reporter.config().setTheme(Theme.DARK);
         }
         else{
-            reporter = new ExtentHtmlReporter(new File(reportDirPath+ "/FreeLogin" + Helper.getDateTimeStamp() +".html"));
+            //reporter = new ExtentHtmlReporter(new File(reportDirPath+ "/FreeLogin" + Helper.getDateTimeStamp() +".html"));
+            reporter = new ExtentHtmlReporter(new File(reportDirPath+ "/FreeLogin.html"));
             reporter.config().setDocumentTitle("Orange HRM Automation Report");
             reporter.config().setReportName("Functional Report");
             reporter.config().setTheme(Theme.DARK);
