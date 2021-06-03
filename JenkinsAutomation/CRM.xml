@@ -1,9 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <suite thread-count="2" parallel="tests" name="HRM">
     <test name="Login Testcase">
-        <parameter name="browser" value="Chrome" />
-        <parameter name="browser" value="firefox" />
-        <parameter name="browser" value="Edge" />
         <classes>
             <class name="testcases.LoginTest" />
         </classes>

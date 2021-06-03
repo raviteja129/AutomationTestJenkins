@@ -11,7 +11,6 @@ import java.util.concurrent.TimeUnit;
 
 public class BrowserDataFactory {
 
-    @Parameters("Browser")
     public static WebDriver startApplication(String browserName, String appURL) {
         WebDriver driver = null;
         if (browserName.contains("Chrome") || browserName.contains("CHROME")) {
