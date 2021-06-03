@@ -1,12 +1,14 @@
 package testcases;
 
 import org.openqa.selenium.support.PageFactory;
+import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 import pages.BaseClass;
 import pages.HomePage;
 import pages.LoginPage;
 
 public class LoginTest extends BaseClass {
+    @Parameters("Browser")
     @Test
     public void LoginApp() {
         extentTest = report.createTest("Automation Practice - Home Page");
