@@ -5,11 +5,13 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.testng.annotations.Parameters;
 
 import java.util.concurrent.TimeUnit;
 
 public class BrowserDataFactory {
 
+    @Parameters("Browser")
     public static WebDriver startApplication(String browserName, String appURL) {
         WebDriver driver = null;
         if (browserName.contains("Chrome") || browserName.contains("CHROME")) {
